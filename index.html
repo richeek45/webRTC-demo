@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>WebRTC Demo</title>
+</head>
+<body id="container">
+  <div id="login-page" class="page" >
+    <h2>Login As</h2>
+    <input type="text" id="username" />
+    <button id="login">Login</button>
+  </div>
+
+  <div id="share-page" class="page">
+    <h2>File Sharing</h2>
+    <input type="text" id="their-username" />
+    <button id="connect">Connect</button>
+    <div id="ready">Ready!</div>
+    <br />
+    <br />
+    <input type="file" id="files" name="file" /> Read bytes:
+    <button id="send-file">Send</button>
+    <p id="status"></p>
+  </div>
+
+  <div id="call-page" class="page">
+    <input type="text" id="theirusername" />
+    <button id="call">Call</button>
+    <button id="hang-up">Hang Up</button>
+    <input type="text" id="message"></input>
+    <button id="send-message">Send</button>
+    <div id="received"></div>
+
+    <video id="yours" autoplay></video>
+    <video id="theirs" autoplay></video>
+  </div>
+
+  <script src="client.js"></script>
+  <canvas></canvas>
+  <!-- <button id="capture">Capture</button> -->
+  <!-- <script src="main.js"></script> -->
+</body>
+</html>
